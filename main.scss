@@ -155,9 +155,13 @@ header {
       top: -70px;
       transform: translateY(70px);
       nav {
-        background-color: #fff;
-        > ul {
-          box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
+        @media #{$tablet} {
+          border-bottom: 1px solid #f1f1f1;
+          background-color: #fff;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          padding: 13px 20px;
         }
       }
     }
@@ -636,7 +640,7 @@ header {
     }
   }
 
-  @media (max-width: 768px) {
+  @media #{$tablet} {
     div {
       display: block;
       float: right;

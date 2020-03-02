@@ -12,6 +12,9 @@ $(function() {
   $("nav.mobile-menu div").click(function() {
     $(".mobile-menu > ul").slideToggle();
     $(".mobile-menu ul ul").css("display", "none");
+    $(".mobile-menu ul li")
+      .siblings()
+      .removeClass("list-open");
   });
 
   $(".mobile-menu ul li").click(function() {

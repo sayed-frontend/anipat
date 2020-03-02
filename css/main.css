@@ -172,13 +172,15 @@ header .sticky-header.sticky {
           transform: translateY(70px);
 }
 
-header .sticky-header.sticky nav {
-  background-color: #fff;
-}
-
-header .sticky-header.sticky nav > ul {
-  -webkit-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
+@media (max-width: 991px) {
+  header .sticky-header.sticky nav {
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 13px 20px;
+  }
 }
 
 .hero-image {
@@ -789,7 +791,7 @@ header .sticky-header.sticky nav > ul {
   padding: 5px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .mobile-menu div {
     display: block;
     float: right;
