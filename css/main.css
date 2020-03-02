@@ -174,7 +174,6 @@ header .sticky-header.sticky {
 
 @media (max-width: 991px) {
   header .sticky-header.sticky nav {
-    border-bottom: 1px solid #f1f1f1;
     background-color: #fff;
     width: 100%;
     position: absolute;
@@ -800,6 +799,7 @@ header .sticky-header.sticky {
   .mobile-menu > ul {
     display: none;
     padding-top: 30px;
+    border-bottom: 1px solid #f1f1f1;
   }
   .mobile-menu ul li {
     display: block;

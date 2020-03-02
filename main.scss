@@ -156,7 +156,6 @@ header {
       transform: translateY(70px);
       nav {
         @media #{$tablet} {
-          border-bottom: 1px solid #f1f1f1;
           background-color: #fff;
           width: 100%;
           position: absolute;
@@ -649,6 +648,7 @@ header {
     > ul {
       display: none;
       padding-top: 30px;
+      border-bottom: 1px solid #f1f1f1;
     }
     ul li {
       display: block;
